@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sons of Liberty - либеральный просветительский проект</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#">
+                <h2 class="headline btn fancy-border">
+                    <span class="logo">Sons of Liberty</span>
+                </h2>
+                
+            </a>
+
+            <div class="menu" id="menu"> 
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#home" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#quickread" class="list-link">Quick Read</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#olderposts" class="list-link">Older Posts</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#categories" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#usefullinks" class="list-link">Useful links</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#contact" class="list-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+                <button class="btn place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                </button>
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="search-form-container container" id="search-form-container">
+        <div class="form-container-inner">
+            <form action="" class="form">
+                <input type="text" class="form-input" placeholder="What are you looking for?">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">Or press ESC to close</span>
+        </div>
+
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+
+    <section class="featured-articles section-header-offset" id="home">
+        <div class="featured-articles-container container d-grid">
+            <div class="featured-content d-grid">
+                <div class="headline-banner">
+                    <h3 class="headline btn fancy-border">
+                        <span class="place-items-center">Reminder</span>
+                    </h3>
+                    <span class="headline-description">Свобода - это не то, что вам дали. Свобода - это то, что у вас нельзя отнять.</span>
+                </div>
+
+                <a href="https://vk.com/@sonsofliberty2021-pochemu-haiek-byl-prav-naschet-togo-chto-nacisty-byli-social" class="article featured-article featured-article-1" target="_blank">
+                    <img src="./img/featured/featured-1.png" alt="" class="article-image article-image-1">
+                    <span class="article-category">Political Philosophy</span>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Feb 1th 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>10 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Почему Хайек был прав насчёт того, что нацисты были социалистами</h3>
+                    </div>
+                </a>
+
+                <a href="https://vk.com/@sonsofliberty2021-otvergnuvshii-budet-otvergnut-tragediya-zhaira-bolsonaru" class="article featured-article featured-article-2" target="_blank">
+                    <img src="./img/featured/featured-2.jpg" alt="" class="article-image">
+                    <span class="article-category">Politics</span>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Jan 10th 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Отвергнувший будет отвергнут - трагедия Жаира Болсонару</h3>
+                    </div>
+                </a>
+
+                <a href="https://vk.com/@sonsofliberty2021-bednaya-braziliya-neschastnye-brazilcy" class="article featured-article featured-article-3" target="_blank">
+                    <img src="./img/featured/featured-3.jpg" alt="" class="article-image">
+                    <span class="article-category">Latin America</span>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Jan 9th 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>4 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Бедная Бразилия, несчастные бразильцы…</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="sidebar d-grid">
+
+                <h3 class="title featured-content-title">Trending Articles</h3>
+
+                <a href="https://vk.com/@sonsofliberty2021-pochemu-kopatych-ukrainec-rassledovanie-ili-davydova" class="trending-news-box" target="_blank">
+                    <div class="trending-news-image-box">
+                        <span class="trending-number place-items-center">01</span>
+                            <img src="./img/trending/trending-1.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+                        <div class="article-data">
+                            <span>Oct 8th 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">ПОЧЕМУ КОПАТЫЧ УКРАИНЕЦ? РАССЛЕДОВАНИЕ ИЛЬИ ДАВЫДОВА.</h3>
+                    </div>
+                </a>
+
+                <a href="https://vk.com/@sonsofliberty2021-prezidentskaya-programma-valeri-pekress" class="trending-news-box" target="_blank">
+                    <div class="trending-news-image-box">
+                        <span class="trending-number place-items-center">02</span>
+                            <img src="./img/trending/trending-2.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+                        <div class="article-data">
+                            <span>Dec 24th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>6 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Президентская программа Валери Пекресс</h3>
+                    </div>
+                </a>
+
+                <a href="https://vk.com/@sonsofliberty2021-taivan-mozhet-vyigrat-voinu-s-knr" class="trending-news-box" target="_blank">
+                    <div class="trending-news-image-box">
+                        <span class="trending-number place-items-center">03</span>
+                            <img src="./img/trending/trending-3.jpeg" alt="" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+                        <div class="article-data">
+                            <span>Aug 13th 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>6 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Тайвань может выиграть войну с КНР</h3>
+                    </div>
+                </a>
+
+                
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-read section" id="quickread">
+        <div class="container">
+            <h2 class="title section-title" data-name="Quick read">Quick Read</h2>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <a href="https://vk.com/sonsofliberty2021?w=wall-205410426_34416" class="article swiper-slide" target="_blank">
+                        <img src="./img/quickread/quickread-0.jpeg" alt="" class="article-image"> 
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Feb 16th 2023</span>
+                                <span class="article-data-spacer"></span>
+                                <span>1 min read</span>
+                            </div>
+    
+                            <h3 class="title article-title">Праймериз венесуэльской оппозиции состоятся в октябре</h3>
+                        </div>
+                    </a>
+
+                    <a href="https://vk.com/sonsofliberty2021?w=wall-205410426_33603" class="article swiper-slide" target="_blank">
+                        <img src="./img/quickread/quickread-1.jpg" alt="" class="article-image"> 
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Feb 6th 2023</span>
+                                <span class="article-data-spacer"></span>
+                                <span>1 min read</span>
+                            </div>
+    
+                            <h3 class="title article-title">112 лет со дня рождения Рональда Рейгана</h3>
+                        </div>
+                    </a>
+
+                    <a href="https://vk.com/sonsofliberty2021?w=wall-205410426_33552" class="article swiper-slide" target="_blank">
+                        <img src="./img/quickread/quickread-2.jpg" alt="" class="article-image"> 
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Feb 5th 2023</span>
+                                <span class="article-data-spacer"></span>
+                                <span>1 min read</span>
+                            </div>
+    
+                            <h3 class="title article-title">Протесты против пенсионной реформы во Франции</h3>
+                        </div>
+                    </a>
+
+                    <a href="https://vk.com/sonsofliberty2021?w=wall-205410426_32923" class="article swiper-slide" target="_blank">
+                        <img src="./img/quickread/quickread-3.jpg" alt="" class="article-image"> 
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Jan 24th 2023</span>
+                                <span class="article-data-spacer"></span>
+                                <span>1 min read</span>
+                            </div>
+    
+                            <h3 class="title article-title">Нет – ложной дихотомии! Киршнеристы сядут на оба стула сразу</h3>
+                        </div>
+                    </a>
+
+                    <a href="https://vk.com/sonsofliberty2021?w=wall-205410426_32609" class="article swiper-slide" target="_blank">
+                        <img src="./img/quickread/quickread-4.jpg" alt="" class="article-image"> 
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Jan 17th 2023</span>
+                                <span class="article-data-spacer"></span>
+                                <span>1 min read</span>
+                            </div>
+    
+                            <h3 class="title article-title">Реакция на народное восстание</h3>
+                        </div>
+                    </a>
+
+                    <a href="https://vk.com/sonsofliberty2021?w=wall-205410426_32407" class="article swiper-slide" target="_blank">
+                        <img src="./img/quickread/quickread-5.jpg" alt="" class="article-image"> 
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>Jan 15th 2023</span>
+                                <span class="article-data-spacer"></span>
+                                <span>1 min read</span>
+                            </div>
+    
+                            <h3 class="title article-title">94 года со дня рождения Мартина Лютера Кинга</h3>
+                        </div>
+                    </a>
+            
+                </div>
+
+                <div class="swiper-button-prev swiper-controls"></div>
+                <div class="swiper-button-next swiper-controls"></div>
+                <div class="swiper-pagination"></div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="older-posts section" id="olderposts">
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Older Posts">Older Posts</h2>
+
+            <div class="older-posts-grid-wrapper d-grid">
+                <a href="https://vk.com/@sonsofliberty2021-kultura-straha" class="article d-grid" target="_blank">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./img/olderposts/olderposts-2.jpg" alt="" class="article-image">
+                    </div>
+                
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Jun 24th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>4 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Культура страха</h3>
+                        <p class="article-description">Читателям романов-антиутопий наверняка знакомо то чувство страха перед образом общества, в котором свобода личности подчинена машинам или тоталитарным государствам...</p>
+                    </div>
+                </a>
+
+                <a href="https://vk.com/@sonsofliberty2021-programma-demokraticheskoi-partii-albanii" class="article d-grid" target="_blank">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./img/olderposts/olderposts-1.jpg" alt="" class="article-image">
+                    </div>
+                
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Jun 30th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>4 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Программа Демократической Партии Албании</h3>
+                        <p class="article-description">Демократическая Партия Албании (Partia Demokratike e Shqipërisë) — одна из ведущих политических сил в Албании, противостоящая правящей Социалистической Партии Албании (Partia Socialiste e Shqipërisë)...</p>
+                    </div>
+                </a>
+
+
+                <a href="https://vk.com/@sonsofliberty2021-veimarskii-treugolnik" class="article d-grid" target="_blank">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./img/olderposts/olderposts-3.jpg" alt="" class="article-image">
+                    </div>
+                
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Jul 8th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>10 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">«Веймарский треугольник»</h3>
+                        <p class="article-description">“Веймарский треугольник”, созданный в 1991 году, является одним из европейских интеграционных объединений...</p>
+                    </div>
+                </a>
+
+                <a href="https://vk.com/@sonsofliberty2021-singapur-kak-postroit-uspeshnoe-obschestvo-i-gramotno-im-upr" class="article d-grid" target="_blank">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./img/olderposts/olderposts-4.png" alt="" class="article-image">
+                    </div>
+                
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Jul 9th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>15 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Сингапур: как построить успешное общество и грамотно им управлять</h3>
+                        <p class="article-description">Практически каждый, кто когда-либо интересовался политикой знает о сингапурском экономическом чуде и его авторе — Ли Кван Ю...</p>
+                    </div>
+                </a>
+
+                <a href="https://vk.com/@sonsofliberty2021-sofizmy-svetskogo-pro-laifa" class="article d-grid" target="_blank">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./img/olderposts/olderposts-5.jpg" alt="" class="article-image">
+                    </div>
+                
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Jul 10th 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>6 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Софизмы светского про-лайфа</h3>
+                        <p class="article-description">В последнее время в интернете определенную популярность набрали попытки обосновать про-лайф со светских позиций. Если кратко, то аргумент выглядит примерно так...</p>
+                    </div>
+                </a>
+
+                <a href="https://vk.com/@sonsofliberty2021-prizrak-kommunizma" class="article d-grid" target="_blank">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./img/olderposts/olderposts-6.png" alt="" class="article-image">
+                    </div>
+                
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Jul 16th 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>11 min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Призрак коммунизма</h3>
+                        <p class="article-description">Нет, это не заклинание припартийного колдуна РСДРП(б), так выглядит начало последней главы соборного послания от апостола Иакова...</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="see-more-container">
+                <a href="https://vk.com/@sonsofliberty2021" class="btn see-more-btn place-items-center" target="_blank">
+                    See more <i class="ri-arrow-right-s-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-tags section" id="categories">
+        <div class="container">
+            <h2 class="title section-title" data-name="Popular Tags">Popular Tags</h2>
+            <div class="popular-tags-container d-grid">
+                <a href="https://vk.com/wall-205410426?q=%23%D0%92%D1%8B%D1%81%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" class="article" target="_blank">
+                    <span class="tag-name">#высказывание</span>
+                    <img src="./img/populartags/populartags-1.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="https://vk.com/wall-205410426?q=%23%D0%98%D0%BD%D1%84%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0" class="article" target="_blank">
+                    <span class="tag-name">#инфографика</span>
+                    <img src="./img/populartags/populartags-2.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="https://vk.com/wall-205410426?q=%23%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE_%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D1%8B" class="article" target="_blank">
+                    <span class="tag-name">#искусство свободы</span>
+                    <img src="./img/populartags/populartags-3.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="https://vk.com/wall-205410426?q=%23%D0%97%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B0" class="article" target="_blank">
+                    <span class="tag-name">#заметка</span>
+                    <img src="./img/populartags/populartags-4.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="https://vk.com/wall-205410426?q=%23%D0%9D%D0%BE%D1%87%D0%BD%D0%BE%D0%B9_%D0%B6%D0%B8%D1%80" class="article" target="_blank">
+                    <span class="tag-name">#ночной жир</span>
+                    <img src="./img/populartags/populartags-5.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="https://vk.com/wall-205410426?q=%23%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0" class="article" target="_blank">
+                    <span class="tag-name">#латинская америка</span>
+                    <img src="./img/populartags/populartags-6.png" alt="" class="article-image">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section">
+        <div class="footer-container container d-grid">
+            <div class="company-data">
+                <a href="./index.html">
+                    <h2 class="logo">Sons of Liberty</h2>
+                </a>
+                <p class="company-description">
+                    Дети свободы - просветительский проект, направленный на распространение идей, близких к классическому либерализму, а также занимающийся популяризацией социальных наук (политической науки, экономики, истории, международных отношений и др.)
+                </p>
+
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="https://t.me/iziboths1" class="list-link" target="_blank">
+                            <i class="ri-telegram-line"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <span class="copyright-notice">&copy; 2023 Sons of Liberty</span>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Categories</h6>
+                
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="https://vk.com/wall-205410426?q=%23%D0%92%D1%8B%D1%81%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" class="list-link" target="_blank">Высказывание</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://vk.com/wall-205410426?q=%23%D0%98%D0%BD%D1%84%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0" class="list-link" target="_blank">Инфографика</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://vk.com/wall-205410426?q=%23%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE_%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D1%8B" class="list-link" target="_blank">Искусство свободы</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://vk.com/wall-205410426?q=%23%D0%97%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B0" class="list-link" target="_blank">Заметка</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://vk.com/wall-205410426?q=%23%D0%9D%D0%BE%D1%87%D0%BD%D0%BE%D0%B9_%D0%B6%D0%B8%D1%80" class="list-link" target="_blank">Ночной жир</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://vk.com/wall-205410426?q=%23%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0" class="list-link" target="_blank">Латинская Америка</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h6 class="title footer-title" id="usefullinks">Useful links</h6>
+                
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="https://libertarian.on.ca/what_is_libertarianism" class="list-link" target="_blank">What is libertarianism?</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://www.libertarianism.org/" class="list-link" target="_blank">Libertarianism.org</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://mises.org/" class="list-link" target="_blank">Mises.org</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://reason.com/" class="list-link" target="_blank">Reason.com</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h6 class="title footer-title" id="contact">Editorial Office</h6>
+                
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="https://vk.com/iziboths" class="list-link" target="_blank">Contact us</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://vk.com/sonsofliberty2021?w=wall-205410426_29987" class="list-link" target="_blank">Authors</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://vk.com/sonsofliberty2021" class="list-link" target="_blank">Subscription in VK</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://t.me/iziboths1" class="list-link" target="_blank">Subscription in Telegram</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>
